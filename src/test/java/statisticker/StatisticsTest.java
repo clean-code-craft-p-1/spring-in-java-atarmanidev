@@ -17,9 +17,6 @@ public class StatisticsTest
         List<Float> numberList = Arrays.asList(numbers);
 
         Statistics.Stats s= Statistics.getStatistics(numberList);
-        System.out.println("average"+s.average);
-        System.out.println("min"+s.min);
-        System.out.println("max"+s.max);
 
         float epsilon = 0.001f;
         assertEquals(s.average, 4.525f, epsilon);
